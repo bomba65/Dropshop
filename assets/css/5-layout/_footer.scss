@@ -1,0 +1,125 @@
+footer {
+  color: #fff;
+  background-color: #003E93;
+
+  a {
+    color: #fff;
+  }
+  a:hover {
+    color: #fff;
+    text-decoration: none;
+  }
+
+  .footer-map {
+    text-align: center;
+    a {
+      width: 800px;
+    }
+  }
+
+  .footer-top {
+    .footer-top-immortal {
+      a {
+        align-items: flex-start;
+        img {
+          width: 34px;
+          margin-right: 15px;
+        }
+        p {
+          margin: 0;
+        }
+        p:first-child {
+          font-size: 12px;
+        }
+        p:last-child {
+          font-size: 18px;
+        }
+      }
+
+      @include media-breakpoint-down(md) {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        &>div {
+          width: 48%;
+          text-align: center;
+        }
+        img {
+          width: 44px;
+        }
+        a {
+          justify-content: center;
+          img {
+            width: 20px;
+          }
+          p {
+            text-align: center;
+          }
+          p:first-child {
+            font-size: 6.5px;
+          }
+          p:last-child {
+            font-size: 10px;
+          }
+        }
+      }
+    }
+
+    ul {
+      padding: 0;
+      padding-top: 2.5rem;
+      list-style: none;
+
+      li {
+        margin-bottom: 1rem;
+      }
+
+      a {
+        font-size: 18px;
+        text-decoration: underline;
+      }
+    }
+  }
+
+  .footer-bottom {
+    text-align: center;
+    .social-icons {
+      padding-top: 2rem;
+      a {
+        width: 50px;
+        height: 50px;
+        margin-left: 3rem;
+        border-radius: 50%;
+        position: relative;
+        display: inline-block;
+        border: 2px solid #FF9600;
+
+        &:first-child {
+          margin-left: 0;
+        }
+        img {
+          top: 50%;
+          left: 50%;
+          position: absolute;
+          transform: translate(-50%, -50%);
+        }
+      }
+      a:hover {
+        background-color: #FF9600;
+      }
+
+      @include media-breakpoint-down(sm) {
+        padding: 1rem 0 0;
+        a {
+          width: 30px;
+          height: 30px;
+          margin-left: 3rem;
+
+          img {
+            height: 10px;
+          }
+        }
+      }
+    }
+  }
+}
