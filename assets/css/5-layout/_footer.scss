@@ -15,24 +15,53 @@ footer {
     a {
       width: 800px;
     }
+
+    img {
+      height: 50px;
+    }
   }
 
   .footer-top {
     .footer-top-immortal {
+      .logo {
+        img {
+          width: 130px;
+        }
+      }
       a {
         align-items: flex-start;
         img {
-          width: 34px;
+          width: 28px;
           margin-right: 15px;
         }
         p {
           margin: 0;
         }
         p:first-child {
-          font-size: 12px;
+          font-size: 13px;
         }
         p:last-child {
-          font-size: 18px;
+          font-size: 15px;
+        }
+      }
+
+      .contacts, .links {
+        max-width: 250px;
+      }
+
+      .links {
+        justify-content: space-between;
+        div {
+          margin-left: 15px;
+          width: calc(50% - 15px);
+
+          a {
+            font-size: 15px;
+
+            &:hover {
+              text-decoration: underline;
+            }
+          }
         }
       }
 
@@ -42,52 +71,45 @@ footer {
         justify-content: space-between;
         &>div {
           width: 48%;
-          text-align: center;
+          text-align: right;
+          margin-bottom: 1rem;
         }
-        img {
-          width: 44px;
+        .logo {
+          width: 100%;
+        }
+      }
+      @include media-breakpoint-down(sm) {
+        .logo {
+          img {
+            width: 20%;
+          }
         }
         a {
-          justify-content: center;
           img {
             width: 20px;
           }
           p {
-            text-align: center;
+            text-align: left;
           }
           p:first-child {
-            font-size: 6.5px;
+            font-size: 11px;
           }
           p:last-child {
-            font-size: 10px;
+            font-size: 12px;
           }
         }
-      }
-    }
-
-    ul {
-      padding: 0;
-      padding-top: 2.5rem;
-      list-style: none;
-
-      li {
-        margin-bottom: 1rem;
-      }
-
-      a {
-        font-size: 18px;
-        text-decoration: underline;
       }
     }
   }
 
   .footer-bottom {
+    background-color: #023b8a;
     text-align: center;
     .social-icons {
       padding-top: 2rem;
       a {
-        width: 50px;
-        height: 50px;
+        width: 40px;
+        height: 40px;
         margin-left: 3rem;
         border-radius: 50%;
         position: relative;

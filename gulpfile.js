@@ -20,6 +20,7 @@ gulp.task("concatScripts", function() {
 		'assets/js/vendor/jquery.magnific-popup.min.js',
 		'assets/js/vendor/slick.min.js',
 		'assets/js/vendor/inputmask.js',
+		'assets/js/vendor/waypoint.js',
 		'assets/js/vendor/inputmask.phone.extensions.js',
 		'assets/js/functions.js'
 	])
